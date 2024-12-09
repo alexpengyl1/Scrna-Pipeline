@@ -154,10 +154,14 @@ gene_to_cluster = diff_test_res %>%    # 从diff_test_res开始
   pull(gene_short_name)              # 提取gene_short_name列的值
 
 ##sig_gene_names <- row.names(subset(diff_test_res, qval < 0.01))#####可以调整q的大小来控制基因数量，但是有时候基因太多了只能这样用上面的代码来做
-plot_pseudotime_heatmap(HSMM[gene_to_cluster,],
-                        num_clusters = 5,#######可以设置cluster的数量
+p50=plot_pseudotime_heatmap(HSMM[gene_to_cluster,],
+                        num_clusters = 3,#######可以设置cluster的数量
                         cores = 20,
-                        show_rownames = T)
+                        show_rownames = T,
+                        return_heatmap = TRUE)
+pdf("heatmap.pdf", width=8, height=8)
+print(p50)
+dev.off()
 
 
 
