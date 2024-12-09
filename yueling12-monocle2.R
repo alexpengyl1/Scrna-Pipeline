@@ -145,6 +145,19 @@ plot_pseudotime_heatmap(HSMM[sig_gene_names,],
                         cores = 1,
                         show_rownames = T)
 
+################也可以使用全部的基因来做差异分析
+diff_test_res <- differentialGeneTest(HSMM,
+                                      fullModelFormulaStr = "~sm.ns(Pseudotime)")
+gene_to_cluster = diff_test_res %>%    # 从diff_test_res开始
+  arrange(qval) %>%                  # 按qval值排序
+  head(50) %>%                       # 取前50行
+  pull(gene_short_name)              # 提取gene_short_name列的值
+
+##sig_gene_names <- row.names(subset(diff_test_res, qval < 0.01))#####可以调整q的大小来控制基因数量，但是有时候基因太多了只能这样用上面的代码来做
+plot_pseudotime_heatmap(HSMM[gene_to_cluster,],
+                        num_clusters = 5,#######可以设置cluster的数量
+                        cores = 20,
+                        show_rownames = T)
 
 
 
