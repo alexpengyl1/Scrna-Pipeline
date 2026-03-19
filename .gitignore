@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+
+# R session and history files
+.Rhistory
+.RData
+.Ruserdata
+
+# RStudio
+.Rproj.user/
+*.Rproj
+
+# Quarto / knitr intermediates
+*_cache/
+*.utf8.md
+*.knit.md
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python environments that sometimes accompany mixed pipelines
+.venv/
+venv/
+
+# Common output folders for local analysis artifacts
+results/
+figures/
+plots/
+tmp/
+temp/
