@@ -4,6 +4,14 @@ This repository contains a collection of R scripts for common single-cell RNA-se
 
 The repository has been renamed and documented to improve readability, GitHub usability, and FAIR alignment.
 
+## Project background
+
+This repository contains analysis notes, workflow examples, and code summaries compiled by Yueling Peng during 2021-2022 while learning single-cell RNA-seq analysis through coursework and hands-on practice.
+
+The content is shared as an open learning resource with free access for everyone.
+
+It is also shared with the hope of learning from and exchanging ideas with other researchers working in single-cell sequencing, and of contributing, even in a small way, to progress in biomedical and medical research through open knowledge sharing.
+
 ## Repository scope
 
 The scripts in this repository are examples and analysis templates collected across multiple single-cell projects. They are most useful as modular workflow references rather than as a single end-to-end pipeline that can be run unchanged on any dataset.
