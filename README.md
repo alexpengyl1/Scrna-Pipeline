@@ -175,18 +175,7 @@ Before reusing any script:
 4. standardize object names across scripts
 5. pin package versions using `renv` or another environment manager
 6. add small example datasets or mock inputs where licensing permits
-
-## Recommended next improvements
-
-To make this repository more FAIR and publication-ready, the most valuable next steps would be:
-
-1. add an environment lock file such as `renv.lock`
-2. add a `LICENSE`
-3. add per-script header metadata with author, purpose, required inputs, and outputs
-4. remove embedded installation commands from analysis scripts
-5. create a minimal reproducible example for at least one workflow
-6. separate reusable utility functions from project-specific analysis notebooks
-
+7. 
 ## Citation and attribution
 
 If you use this repository in teaching, collaboration, or downstream analysis, please cite the underlying tools and databases used by each workflow, including Seurat, SingleR, Monocle, CellChat, NicheNet, SCENIC, inferCNV, and velocyto where relevant.
